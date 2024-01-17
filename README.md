@@ -7,3 +7,6 @@ Aim for burmese text data collection from wikpedia
 
 **Content Scrape** <br>
    python content_scrape.py <**link**> <**save_file_name**>
+
+**Scrape all links within a given json** <br>
+    python scrape_by_json.py 
