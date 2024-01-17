@@ -8,6 +8,7 @@ def is_interesting(tag):
     return tag.name in ['p', 'ol','ul']
 
 def content_scrape(url,save_file):
+    print("geeting from outer file" + url)
     response = requests.get(url)
     encoding = response.encoding if 'charset' in response.headers.get('content-type', '').lower() else None
     html_content = response.content.decode(encoding, 'replace') if encoding else response.text
